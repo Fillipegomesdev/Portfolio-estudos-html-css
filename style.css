@@ -1,0 +1,7 @@
+/* Aplica o mesmo estilo para imagens dentro dos botões LuA e menu e fechar */
+.nav__toggle-moon img,
+.nav__toggle-menu img,
+.nav__toggle-Fechar img {
+    width: 24px; /* Define a largura da imagem como 24 pixels */
+    height: 24px; /* Define a altura da imagem como 24 pixels */
+}
