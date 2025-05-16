@@ -1,0 +1,63 @@
+<!DOCTYPE html><!-- Define que o documento é do tipo HTML5 -->
+<html lang="pt-br"><!-- Início do documento HTML com idioma pt-br-->
+<head>
+    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres como UTF-8 (suporta a maioria dos caracteres de todas as línguas) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/logof.png" type="image/png"> <!-- Link para o ícone do site (favicon) que aparece na aba do navegador -->
+    <title>PortfolioDev</title> <!-- Título da página que aparece na aba do navegador -->
+    <meta name="description" content="Portfolio Dev - Portfólio de Desenvolvimento Web"> <!-- Descrição da página, útil para SEO e compartilhamento em redes sociais -->
+    <meta name="keywords" content="Portfolio, Desenvolvimento, Web, HTML, CSS, JavaScript"> <!-- Palavras-chave para SEO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Pré-conexão com o Google Fonts para otimizar o carregamento de fontes -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  <!-- Pré-conexão com o Google Fonts com suporte a CORS (Cross-Origin Resource Sharing) -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"><!-- Link para o CSS do Unicons, uma biblioteca de ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> <!-- Link para o CSS Normalize, que ajuda a padronizar estilos entre navegadores -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">    <!-- Link para o Google Fonts, importando a fonte "Outfit" em diferentes pesos -->
+    <link rel="stylesheet" href="/style.css"> <!-- Link para o arquivo CSS externo que contém os estilos da página -->
+</head>
+<body><!-- Início do corpo do site (conteúdo visível ao usuário) -->
+    <nav><!-- Tag de navegação principal da página -->
+        <div class="container nav__container"><!-- Container principal da navegação (usado para estilizar e organizar o conteúdo dentro do <nav>) -->
+            <a href="index.html" class="nav__logo"><!-- Logo do site (link para a página inicial) -->
+                <img src="/assets/logof.png" alt=" NavBar Logo"> <!-- Imagem do logo do portfólio -->
+            </a><!-- Fim do link do logo -->
+            <ul class="nav__menu"> <!-- Lista de navegação (menu) -->
+                 <li><a href="#">Inicio</a></li>
+                 <li><a href="#Sobre mim">Sobre mim</a></li>
+                 <li><a href="#Serviços">Serviços</a></li>
+                 <li><a href="#Projetos">Projetos</a></li>
+                 <li><a href="#Contato">Contato</a></li>
+            </ul> <!-- Lista de navegação (menu) -->
+            <div class="nav__buttons">
+                <button class="nav__theme-btn"><i class="uil uil-moon"></i></button> <!-- Botão para alternar o tema (claro/escuro) -->
+                <button class="nav__toggle-open"><i class="uil uil-bars"></i></button> <!-- Botão para abrir o menu em dispositivos móveis (ícone de barras) -->
+                <button class="nav__toggle-close"><i class="uil uil-multiply"></i></button> <!-- Botão para fechar o menu em dispositivos móveis (ícone de fechar) -->
+            </div>
+        </div>
+    </nav>   <!-- Fim do container da navegação -->
+
+    <header>  <!-- Cabeçalho da página (geralmente contém informações introdutórias ou de apresentação) -->
+        <div class="container header__container"><!-- Container principal do cabeçalho -->
+            <article class="header__image">
+                <img src="assets/profile.jpeg" alt="Header Image"> <!-- Imagem do cabeçalho (pode ser uma imagem de fundo ou um avatar) -->
+            </article>  
+            <article class="header__content">
+                <h4>Olá, eu sou <span>Fillipe Gomes</span></h4>
+                <h1>Transformo ideias em sites profissionais<br> com performance, design e experiência</h1>
+                <p>Você está procurando um desenvolvedor dedicado para criar sua presença online? Então chegou ao lugar certo. 
+                   Este é o meu primeiro projeto profissional,um portfólio feito com carinho e foco em performance. 
+                   A cada linha de código, estou construindo o começo de uma jornada. Que tal fazermos parte dela juntos?
+                </p>
+                <div class="header__cta">
+                    <a href="#Contato" class="btn primary">Contrate-me</a> <!-- Botão para entrar em contato -->
+                    <a href="#Projetos" class="btn">Portfolio</a> <!-- Botão para ver  -->
+                </div>                
+            </article>            
+            <ul class="header__socials">
+                <li><a href="https://github.com/Fillipegomesdev" target="_blank"><i class="uil uil-github-alt"></i></a></li>
+                <li><a href="https://www.instagram.com/f.fillipe/" target="_blank"><i class="uil uil-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/fillipe-gomes-4576a317a/" target="_blank"><i class="uil uil-linkedin"></i></a></li>
+            </ul><!-- Lista de ícones sociais (links para redes sociais) -->
+        </div>
+    </header>   <!-- Fim do cabeçalho -->
+</body>
+</html> 
