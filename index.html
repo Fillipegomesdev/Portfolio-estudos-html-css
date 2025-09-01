@@ -1,50 +1,101 @@
 <!DOCTYPE html>
-<!-- Define que o documento é do tipo HTML5 -->
 <html lang="pt-br">
-<!-- Início do documento HTML com idioma inglês -->
-
-<head>
-    <meta charset="UTF-8">
-    <!-- Define o conjunto de caracteres como UTF-8 (suporta a maioria dos caracteres de todas as línguas) -->
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Garante que o layout seja responsivo, adaptando o conteúdo ao tamanho da tela do dispositivo -->
-
-    <title>Document</title>
-    <!--IconsCout CDN-->
-    <link rel="stylesheet" href="style.css">
+<head>      
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="icon" href="/assets/logof.png" type="image/png"> <!-- Link para o ícone do site (favicon) que aparece na aba do navegador -->
+    <title>PortfolioDev</title> <!-- Título da página que aparece na aba do navegador -->
+    <meta name="description" content="Portfolio Dev - Portfólio de Desenvolvimento Web"> <!-- Descrição da página, útil para SEO e compartilhamento em redes sociais -->
+    <meta name="keywords" content="Portfolio, Desenvolvimento, Web, HTML, CSS, JavaScript"> <!-- Palavras-chave para SEO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Pré-conexão com o Google Fonts para otimizar o carregamento de fontes -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  <!-- Pré-conexão com o Google Fonts com suporte a CORS (Cross-Origin Resource Sharing) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"><!-- Link para o CSS do Bootstrap Icons, uma biblioteca de ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> <!-- Link para o CSS Normalize, que ajuda a padronizar estilos entre navegadores -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">    <!-- Link para o Google Fonts, importando a fonte "Outfit" em diferentes pesos -->
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js"></script>
 </head>
-
 <body>
-    <!-- Início do corpo do site (conteúdo visível ao usuário) -->
-
-    <nav> <!-- Tag de navegação principal da página -->
-
-        <div class="container nav__container"><!-- Container principal da navegação (usado para estilizar e organizar o conteúdo dentro do <nav>) -->
-            <a href="index.html" class="nav__logo"><!-- Link que normalmente leva para a página inicial e contém o logotipo -->
-                <img src="img/LogoF.png" alt="Navbar Logo"><!-- Você pode colocar uma imagem ou texto aqui como logo -->
+    <nav><!-- Tag de navegação principal da página -->
+        <div class="container nav__container">
+            <a href="index.html" class="nav__logo">
+                <img src="/assets/logof.png" alt=" NavBar Logo"> 
             </a>
             <ul class="nav__menu"> <!-- Lista de navegação (menu) -->
-                <!-- Aqui vão os itens do menu como: Home, Sobre, Contato, etc. -->
-                 <li><a href="#Inicio">Inicio</a></li><!-- Aqui vão os itens do menu como: Inicio, Servicos, Contato, etc. -->
-                 <li><a href="#Serviços">Serviços</a></li>
+                 <li><a href="#">Inicio</a></li>
+                 <li><a href="#Sobre mim">Sobre mim</a></li>
+                 <li><a href="#Serviços">Habilidades</a></li>
                  <li><a href="#Projetos">Projetos</a></li>
                  <li><a href="#Contato">Contato</a></li>
-            </ul> <!-- Lista de navegação (menu) -->
-
+            </ul> 
             <div class="nav__buttons">
-                <button class="nav__toggle-moon">
-                    <img src="img/moon.png" alt="Icone de Lua">
-                </button>
-                <button class="nav__toggle-menu">
-                    <img src="img/menu.png" alt="Icone de Menu">
-                </button>
-                <button class="nav__toggle-Fechar">
-                    <img src="img/close.png" alt="Icone de Fechar">
-                </button>
+                <button class="nav__theme-btn"><i class="uil uil-moon"></i></button>
+                <button class="nav__toggle-open"><i class="uil uil-bars"></i></button> 
+                <button class="nav__toggle-close"><i class="uil uil-multiply"></i></button> 
             </div>
         </div>
-    </nav>
+    </nav>   <!-- Fim do container da navegação -->
 
+    <header>  <!-- Cabeçalho da página-->
+        <div class="container header__container"><!-- Container principal do cabeçalho -->
+            <article class="header__image">
+                <img class="header__imagemcabecalho" src="assets/selfieperfil1.PNG" alt="Header Image"> <!-- Imagem do cabeçalho (pode ser uma imagem de fundo ou um avatar) -->
+            </article>  
+            <article class="header__content">
+                <h4>Olá, eu me chamo <span>Fillipe Gomes</span></h4>
+                <h1>Sou um Estudante de engenharia de software<br></h1>
+                <p>
+                    Estou no 2 semestre e estou aprendendo desenvolvimento web, 
+                    este é meu primeiro portfólio profissional, onde estou aplicando os conhecimentos adquiridos em HTML, CSS e JavaScript.
+                    
+                </p>
+                <div class="header__cta">
+                    <a href="#Contato" class="btn primary">Sobre mim</a> <!-- Botão para entrar em contato -->
+                    <a href="#Projetos" class="btn">Portfolio</a> <!-- Botão para ver  -->
+                </div>                
+            </article>            
+            <ul class="header__socials"> <!-- Lista de ícones sociais (links para redes sociais) -->
+                <li><a href="https://github.com/Fillipegomesdev" target="_blank"><i class="bi bi-github"></i></a></li>  
+                <li><a href="https://www.instagram.com/f.fillipe/" target="_blank"><i class="bi bi-instagram"></i></a></li> 
+                <li><a href="https://www.linkedin.com/in/fillipe-gomes-4576a317a/" target="_blank"><i class="bi bi-linkedin"></i></a></li> 
+            </ul>
+        </div>
+    </header>   <!-- Fim do cabeçalho -->
+
+    <section class="about" id="about"> <!-- Seção "Sobre mim" do portfólio -->
+        <div class="about__container">  
+            <div class="about__image">    
+                <img src="./assets/selfieperfil1.PNG" alt="About Image"> <!-- Imagem sobre mim (pode ser uma foto pessoal ou uma imagem representativa) -->
+            </div>
+            <div class="about__details">
+                <h1>Sobre mim</h1>
+                <div class="about __cards"> <!-- Cards de informações sobre mim -->
+                    <article class="about__card">
+                        <i class="bi bi-journal-bookmark-fill"></i> <!-- Ícone de formação acadêmica -->
+                        <h5>Formação academica</h5>
+                        <small> Cursando 2 semestre de engenharia de software</small> <!-- Descrição da formação academica -->
+                    </article>
+                    <article class="about__card">
+                        <i class="bi bi-laptop"></i>  <!-- Ícone de projetos -->
+                        <h5>Projetos</h5>
+                        <small>1 projeto completo </small> <!-- Descrição dos projetos -->
+                    </article>
+                    <article class="about__card">
+                        <i class="bi bi-wrench-adjustable"></i> <!-- Ícone de mim -->
+                        <h5>Habilidades</h5>
+                        <small>Html,css, javascript</small> <!-- Descrição da experiência -->
+                    </article>
+                </div>
+                <p>
+                   Olá meu nome é Fillipe Gomes eu sou um estudante de engenharia de software,
+                   estou no 2 semestre e este é meu primeiro portfólio profissional no qual realmente me dediquei 
+                   para que conseguisse aprender desenvolvimento web com html css e javascript,
+                   estou sempre buscando aprender mais e mais, e esse portfólio é o começo de uma jornada 
+                
+                </p>
+            </div>
+
+        </div>
+    </section>
 </body>
-</html>
+</html> 
